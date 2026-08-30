@@ -75,19 +75,6 @@ The checks included:
 No issues were identified in the current sample dataset.
 
 
-## Data Quality
-
-Before performing the KPI analysis, several data quality checks were conducted to ensure that the dataset was suitable for analysis.
-
-The checks included:
-
-* Missing values in the core KPI fields (`goals`, `shots`, and `shots_on_target`).
-* Logical inconsistencies, such as more goals than shots or more shots on target than total shots.
-* Duplicate team-level match statistics based on the combination of `match_id` and `team_id`.
-
-No issues were identified in the current sample dataset.
-
-
 ## SQL Analysis
 
 The offensive performance analysis was conducted using SQL queries that combine tactical formation data with team-level match statistics.
