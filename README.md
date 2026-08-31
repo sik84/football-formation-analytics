@@ -106,6 +106,18 @@ Due to the limited sample size and the absence of additional contextual variable
 A more detailed discussion of the results and limitations is available in the `docs/` directory.
 
 
+## KPI Definitions
+
+The analysis uses four offensive performance metrics:
+
+* **Average Goals** – Average number of goals scored per team-match observation for each formation.
+* **Average Shots** – Average number of total shots per team-match observation for each formation.
+* **Average Shots on Target** – Average number of shots on target per team-match observation for each formation.
+* **Goal Efficiency (%)** – Percentage of total shots that resulted in goals for each formation, calculated as `SUM(goals) / SUM(shots) * 100`.
+
+Goal Efficiency uses `NULLIF(SUM(shots), 0)` in the SQL calculation to prevent division by zero.
+
+
 ## Tech Stack
 
 * **MariaDB** – relational database for storing match, team, formation, and performance data
