@@ -118,6 +118,13 @@ The analysis uses four offensive performance metrics:
 Goal Efficiency uses `NULLIF(SUM(shots), 0)` in the SQL calculation to prevent division by zero.
 
 
+### Dashboard Interactivity
+
+The Metabase dashboard supports interactive filtering at the chart level, allowing individual data points to be filtered using comparison operators. This functionality was tested on the dashboard and behaved as expected.
+
+No global dashboard filter is currently configured.
+
+
 ## Tech Stack
 
 * **MariaDB** – relational database for storing match, team, formation, and performance data
