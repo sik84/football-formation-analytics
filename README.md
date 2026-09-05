@@ -1,5 +1,6 @@
 # Football Formation Analytics
 
+
 ## Project Overview
 
 Football clubs continuously make tactical decisions that can influence match performance. One of the most important decisions is the choice of formation, as it affects offensive and defensive behavior, player roles, and overall playing style.
@@ -9,6 +10,7 @@ This project investigates the relationship between tactical formations and offen
 The project demonstrates the complete analytical workflow, including database design, SQL-based analysis, interpretation of results, discussion of limitations, and formulation of practical recommendations. While the initial version uses a structured sample dataset, the project is designed to be extended with real match data in future iterations.
 
 The findings are intended to illustrate how SQL-based data analysis can support tactical performance evaluation and decision-making in professional football.
+
 
 ## Research Question
 
@@ -45,6 +47,13 @@ The analytical results are presented in a Metabase dashboard that compares offen
 The dashboard follows the offensive progression from overall shooting activity to scoring output and conversion efficiency.
 
 ![Football Formation Analytics Dashboard](outputs/figures/dashboard_football.png)
+
+
+### Dashboard Interactivity
+
+The Metabase dashboard supports interactive filtering at the chart level, allowing individual data points to be filtered using comparison operators. This functionality was tested on the dashboard and behaved as expected.
+
+No global dashboard filter is currently configured.
 
 
 ## Database Structure
@@ -116,13 +125,6 @@ The analysis identified several patterns within the available sample dataset:
 Due to the limited sample size and the absence of additional contextual variables, these findings should be interpreted as exploratory patterns rather than general conclusions about tactical formations in professional football.
 
 A more detailed discussion of the results and limitations is available in the `docs/` directory.
-
-
-### Dashboard Interactivity
-
-The Metabase dashboard supports interactive filtering at the chart level, allowing individual data points to be filtered using comparison operators. This functionality was tested on the dashboard and behaved as expected.
-
-No global dashboard filter is currently configured.
 
 
 ## Tech Stack
