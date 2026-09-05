@@ -75,6 +75,18 @@ The checks included:
 No issues were identified in the current sample dataset.
 
 
+## KPI Definitions
+
+The analysis uses four offensive performance metrics:
+
+* **Average Goals** – Average number of goals scored per team-match observation for each formation.
+* **Average Shots** – Average number of total shots per team-match observation for each formation.
+* **Average Shots on Target** – Average number of shots on target per team-match observation for each formation.
+* **Goal Efficiency (%)** – Percentage of total shots that resulted in goals for each formation, calculated as `SUM(goals) / SUM(shots) * 100`.
+
+Goal Efficiency uses `NULLIF(SUM(shots), 0)` in the SQL calculation to prevent division by zero.
+
+
 ## SQL Analysis
 
 The offensive performance analysis was conducted using SQL queries that combine tactical formation data with team-level match statistics.
@@ -104,18 +116,6 @@ The analysis identified several patterns within the available sample dataset:
 Due to the limited sample size and the absence of additional contextual variables, these findings should be interpreted as exploratory patterns rather than general conclusions about tactical formations in professional football.
 
 A more detailed discussion of the results and limitations is available in the `docs/` directory.
-
-
-## KPI Definitions
-
-The analysis uses four offensive performance metrics:
-
-* **Average Goals** – Average number of goals scored per team-match observation for each formation.
-* **Average Shots** – Average number of total shots per team-match observation for each formation.
-* **Average Shots on Target** – Average number of shots on target per team-match observation for each formation.
-* **Goal Efficiency (%)** – Percentage of total shots that resulted in goals for each formation, calculated as `SUM(goals) / SUM(shots) * 100`.
-
-Goal Efficiency uses `NULLIF(SUM(shots), 0)` in the SQL calculation to prevent division by zero.
 
 
 ### Dashboard Interactivity
